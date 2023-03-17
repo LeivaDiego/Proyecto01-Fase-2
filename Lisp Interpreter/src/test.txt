@@ -1,0 +1,11 @@
+(define
+    (square x) (* x x)
+    )
+
+(define
+    (sum x y) (+ x y)
+    )
+
+(square 5)
+
+(sum 3 4)
