@@ -39,7 +39,7 @@ public class FileScanner {
 
                 // Si el comando esta completo, es agregado a la lista de comandos
                 if (countParentheses(command) == 0) {
-                    commands.add(command.replaceAll("\\s", ""));
+                    commands.add(command.replaceAll("\\s+", " "));
                     command = "";
                 }
             }
