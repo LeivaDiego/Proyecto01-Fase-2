@@ -77,4 +77,34 @@ public class Tokenizer {
         return opener == closer;
     }
 
+    /**
+     * Devuelve un valor entero que hace referencia a que se debe ejecutar
+     * dependiendo del numero
+     * @param command el comando a evaluar
+     * @return el valor entero segun sea la funcion a realizar
+     */
+    public int getCommandType(ArrayList<String> command){
+        if (command.get(0).contains("setq"))
+            return 1;
+        else if (command.get(0).contains("+")||command.get(0).contains("-")||command.get(0).contains("*")||command.get(0).contains("/"))
+            return 2;
+        else if (command.get(0).contains("'")||command.get(0).contains("quote")||command.get(0).contains("print"))
+            return 3;
+        else if(command.get(0).contains(">"))
+            return 4;
+        else if(command.get(0).contains("<"))
+            return 5;
+        else if(command.get(0).contains("equals")||command.get(0).contains("="))
+            return 6;
+        else if(command.get(0).contains("Atom"))
+            return 7;
+        else if(command.get(0).contains("List"))
+            return 8;
+        else if(command.get(0).contains("Cond"))
+            return 9;
+        else if (command.get(0).contains("defun"))
+            return 10;
+        else
+            return -1; // Si no encuentra la expresion
+    }
 }
