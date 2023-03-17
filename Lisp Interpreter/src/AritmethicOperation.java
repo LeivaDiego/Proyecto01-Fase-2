@@ -35,7 +35,7 @@
                          break;
  
                          case "-": //Resta
-                             stack.push(num2 - num1);
+                             stack.push(num1 - num2);
                          break;
  
                          case "*": //Multiplicacion
@@ -44,7 +44,7 @@
  
                          case "/": //Division
                              if (num1 != 0) //Si el  numero es ≠ 0 se puede hacer la division 
-                                 stack.push(num2 / num1);
+                                 stack.push(num1 / num2);
                              else{ //Division indefinida
                                  System.out.println("Error: Division entre cero");
                                  return null;
