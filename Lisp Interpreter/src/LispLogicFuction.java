@@ -3,7 +3,7 @@
  * 
  * Clase que maneja funciones logicas contenidas en el archivo Lisp
  */
-public class LispFunction{
+public class LispLogicFuction {
 
   
     /**
