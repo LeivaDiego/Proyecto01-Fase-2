@@ -15,7 +15,7 @@ class FileScannerTest {
         expectedCommands.add("(define(sumxy)(+xy))");
         expectedCommands.add("(square5)");
         expectedCommands.add("(sum34)");
-        ArrayList<String> actualCommands = FileScanner.parse(filename);
+        ArrayList<String> actualCommands = FileScanner.Parse(filename);
         assertEquals(expectedCommands, actualCommands);
     }
 
