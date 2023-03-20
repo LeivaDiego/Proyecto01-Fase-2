@@ -1,8 +1,31 @@
-(defun fibonacci (n)
-  "Proceso recursivo del termino n de la serie fibonacci"
-  (check-type n (integer 0 *))
-  (if (< n 2) n
-      (+ (fibonacci (1- n)) (fibonacci (- n 2))))) 
 
+(setq vara 10)
+(setq varb * 10 3)
+(setq varc + vara varb)
 
-(print (fibonacci (10)))
+(* (+ 5 6) (+ 4 9))
+(+ 5 9)
+(+ (* 9 4) (* 3 2))
+(* (* 9 4) (* 3 2))
+(- (* 9 4) (* 3 2))
+
+(+ vara 5)
+(quote 5)
+(' Esto es una prueba)
+
+(> 10 5)
+(equals 10 10)
+(equals vara 10)
+(Atom x)
+(Atom (1 2 3))
+(List (x))
+(List (1 2 3))
+
+(Cond (equals vara + 5 5)(* 6 3)(* 5 6))
+(print vara)
+
+(defun name x,y (print x) (print y))
+(name (vara 5))
+
+(defun factorial x (Cond (equals x 1) (print 1) (* x factorial (- 1 x))))
+(factorial (6))

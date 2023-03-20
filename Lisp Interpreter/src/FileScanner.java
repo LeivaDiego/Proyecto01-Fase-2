@@ -18,7 +18,7 @@ public class FileScanner {
      * @return Una lista de comandos sin espacios.
      * @throws RuntimeException Si hay un error al leer el archivo o si falta algun parentesis en los comandos.
      */
-    public static ArrayList<String> Parse(String filepath) {
+    public ArrayList<String> Parse(String filepath) {
         ArrayList<String> commands = new ArrayList<>(); //
 
         try (BufferedReader reader = new BufferedReader(new FileReader(filepath))) {
@@ -39,7 +39,7 @@ public class FileScanner {
 
                 // Si el comando esta completo, es agregado a la lista de comandos
                 if (countParentheses(command) == 0) {
-                    commands.add(command.replaceAll("\\s+", " "));
+                    commands.add(command.replaceAll("\\s+\\s+", " "));
                     command = "";
                 }
             }
@@ -60,7 +60,7 @@ public class FileScanner {
      * @param command el comando a evaluar
      * @return la cantidad de parentesis en el comando
      */
-    private static int countParentheses(String command) {
+    private int countParentheses(String command) {
         int count = 0;
 
         for (int i = 0; i < command.length(); i++) {

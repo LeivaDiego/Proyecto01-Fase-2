@@ -17,7 +17,7 @@ public class View {
      * @param str el mensaje a mostrar
      */
     public void ShowOnScreen(String str){
-        System.out.println(str+'\n');
+        System.out.println(str);
     }
 
 
