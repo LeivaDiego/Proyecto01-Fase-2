@@ -1,10 +1,8 @@
 import java.util.ArrayList;
 
 /**
+ * Clase encargada de evaluar los comandos obtenidos del archivo y generar los tokens pertinentes para su uso
  * @author diego leiva, pablo orellana
- *
- * Clase encargada de evaluar los comandos obtenidos del archivo
- * y generar los tokens pertinentes para su uso
  */
 public class Tokenizer {
 

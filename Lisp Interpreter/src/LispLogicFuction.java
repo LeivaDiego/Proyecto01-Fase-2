@@ -1,7 +1,6 @@
 /**
- * @author diego leiva, pablo orellana
- * 
  * Clase que maneja funciones logicas contenidas en el archivo Lisp
+ * @author diego leiva, pablo orellana
  */
 public class LispLogicFuction {
 

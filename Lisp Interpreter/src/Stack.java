@@ -1,11 +1,8 @@
 import java.util.ArrayList;
 
 /**
+ * Implementacion de una pila, a partir de ArrayList para optimizacion del codigo
  * @author diego leiva, pablo orellana
- *
- * Implementacion de una pila, a partir de ArrayList
- * para optimizacion del codigo
- *
  * @param <T> Dato generico
  */
 public class Stack<T> implements IStack<T>{

@@ -1,7 +1,6 @@
 /**
- * @author diego leiva, pablo orellana
- *
  * Clase encargada de mostrar mensajes en pantalla
+ * @author diego leiva, pablo orellana
  */
 public class View {
 

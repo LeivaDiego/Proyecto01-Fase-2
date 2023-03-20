@@ -1,9 +1,8 @@
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 /**
- * @author diego leiva, pablo orellana
- * 
  * Clase para el manejo de funciones dentro del codigo lisp
+ * @author diego leiva, pablo orellana
  */
 public class FunctionHandler {
 

@@ -1,8 +1,8 @@
 /**
- * @author diego leiva, pablo orellana
- *
  * Clase encargada del manejo de instancia de variables dentro del programa Lisp
- */
+ * @author diego leiva, pablo orellana
+  */
+
 public class VariableHandler {
     private String var_name; // almacena el nombre de la variable
     private int var_value; // almacena el valor de la variable

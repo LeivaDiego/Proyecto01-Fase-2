@@ -4,10 +4,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 /**
+ * Clase encargada de analizar archivos con codigo Lisp y extraer los comandos que contienen
  * @author diego leiva, pablo orellana
- *
- * Clase encargada de analizar archivos con codigo Lisp y extraer los comandos
- * que contienen
  */
 public class FileScanner {
 

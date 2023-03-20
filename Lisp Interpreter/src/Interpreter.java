@@ -6,11 +6,9 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
+ * Clase que modula el interprete en Lisp en esta clase se realizan todas las acciones necesarias para que el
+ * interprete funcionen correctamente
  * @author diego leiva, pablo orellana
- *
- * Clase que modula el interprete en Lisp
- * en esta clase se realizan todas las acciones necesarias
- * para que el interprete funcionen correctamente
  */
 public class Interpreter {
     private HashMap<String, String> variables = new HashMap<String, String>();

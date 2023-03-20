@@ -1,9 +1,8 @@
  import java.util.Arrays;
 
 /**
- * @author diego leiva, pablo orellana
- * 
  * Clase que realiza operaciones aritmeticas contenidas en el archivo Lisp
+ * @author diego leiva, pablo orellana
  */
  public class AritmethicOperation {
  
