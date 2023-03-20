@@ -84,13 +84,13 @@ public class Interpreter {
      */
     public void newFunction(ArrayList<String> command){
         String name = command.get(1);
-        this.instructions.add(name);
+        this.instructions.add(name); //Agregar la funcion a una instruccion valida
         FunctionsNames.add(name);
         ArrayList<String> instrucciones = new ArrayList<String>();
         LinkedHashMap<String, String> parametersFunction = new LinkedHashMap<String, String>();
-        String[] parametersSplited = command.get(2).trim().split(",");
+        String[] parametersSplited = command.get(2).trim().split(","); //Parametros
         for(String parameter: parametersSplited)
-            parametersFunction.put(parameter, " ");
+            parametersFunction.put(parameter, ""); //Indicar variables de la funcion
         this.parameters.put(name, parametersFunction);
 
         //Verifica si existen otras instrucciones
@@ -102,7 +102,7 @@ public class Interpreter {
                 int cont = 0;
                 for (int j = i+1; j < command.size() && flag; j++){
                     if (!isHere(getInstructions(),command.get(j))){
-                        expresion += command.get(j) + "";
+                        expresion += command.get(j) + " ";
                         cont++;
                     }
                     else
@@ -112,7 +112,7 @@ public class Interpreter {
             }
             instrucciones.add(expresion);
         }
-        functions.put(name, instrucciones);
+        functions.put(name, instrucciones); //Agregar la funcion
     }
 
     /**

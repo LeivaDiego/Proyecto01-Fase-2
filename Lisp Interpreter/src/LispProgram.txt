@@ -1,4 +1,3 @@
-
 (setq vara 10)
 (setq varb * 10 3)
 (setq varc + vara varb)
@@ -24,8 +23,8 @@
 (Cond (equals vara + 5 5)(* 6 3)(* 5 6))
 (print vara)
 
-(defun name x,y (print x) (print y))
+(defun name x,y (print x) (print y) (+ x y))
 (name (vara 5))
 
-(defun factorial x (Cond (equals x 1) (print 1) (* x factorial (- 1 x))))
+(defun factorial x (Cond (equals x 1) (print 1) (* x factorial (- x 1))))
 (factorial (6))
